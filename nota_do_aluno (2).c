@@ -6,7 +6,7 @@ int main(){
 	int  idade, soma;
 	float  media,primeiraNota, segundaNota, terceiraNota, quartaNota;
 	
-	//solicitando informações ao aluno
+	//solicitando informaÃ§Ãµes ao aluno
 	
 	printf("Digite seu nome: ");
 	scanf("%s", &nome);
@@ -24,10 +24,10 @@ int main(){
 	fflush(stdin);
 	
 	
-	//calculando média do aluno.
+	//calculando mÃ©dia do aluno.
 	
-	media = (primeiraNota + segundaNota + terceiraNota + quartaNota) / 4;
-	
+	soma = primeiraNota + segundaNota + terceiraNota + quartaNota ;
+	media = soma / 4;
 	
 	//exibindo resultado para o aluno.
 	
@@ -35,7 +35,7 @@ int main(){
 	printf("\n==== EXIBINDO RESULTADO ====");
 	printf("\nNome: %s \n", nome);
 	printf("\nIdade: %i \n", idade);
-	printf("\nMédia: %4.f \n", media);
+	printf("\nMÃ©dia: %4.f \n", media);
 	
 
 	getchar();
