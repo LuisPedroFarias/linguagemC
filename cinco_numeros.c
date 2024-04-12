@@ -1,17 +1,33 @@
 #include <stdio.h>
+#include <limits.h>
 #include <locale.h>
 
+#define SIZE 5
+
+
 int main(){
-	setlocale(LC_ALL, "");
+				setlocale(LC_ALL, "");
+		
+	int i;
+	float numeros[SIZE];
 	
-	int i, numero, soma = 0;
-	
-	
-	for(i = 1; i <= 5; i++){
-		printf("Digite o %i número: ", i);
-		scanf("%i", &numero);
-			soma = soma + numero;	
-	}
-	
-	printf("\nSoma dos números solicitados: %i \n", soma);
+			printf("INFORME CINCO NÚMEROS.\n");
+			
+		for(i = 0; i < SIZE; i++){
+		
+			printf("Digite o %iº número: ", i+1);
+			scanf("%f", &numeros[i]);
+			
+			if (numeros[i] < 0){
+				numeros[i] = 0;
+			}
+		}
+				
+			printf("\n====EXIBINDO RESULTADOS====\n");
+		for(i = 0; i < SIZE; i++){
+			printf("%iº números: %.1f \n", i+1, numeros[i]);
+		}	
+		
+				
+return 0;				
 }
