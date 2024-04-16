@@ -2,7 +2,7 @@
 #include <limits.h>
 #include <locale.h>
 
-#define TAM 5
+#define TAMANHO 5
 
 
 int main(){
